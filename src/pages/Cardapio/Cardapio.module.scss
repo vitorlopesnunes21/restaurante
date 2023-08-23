@@ -1,12 +1,30 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-}
+@import 'styles/_variaveis.scss';
 
 .menu{
-    padding: 20px;
-    background-color: #1e3520;
-    text-align: center;
+    padding: 20px $padding-horizontal;
+    background-color: #0d290f;
     font-size: 2rem;
     color: #303030;
+    text-align: center;
+}
+
+.logo{
+    width: 20vw;
+    height: 4vw;
+}
+
+.header{
+    background-image: url('/assets/cardapio/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px $padding-horizontal;
+
+    &__text{
+        color: #f4f4f4;
+        font-size: 3vw;
+    }
 }
